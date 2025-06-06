@@ -247,12 +247,14 @@
 //     </section>
 //   );
 // }
+
+//-----------------------------------------------------------------------------------------------------
 import React, { useEffect, useState } from 'react';
 import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import { TechAnimation, FashionAnimation, StudyAnimation } from './Animations/Tech-Fashion-Study-Animations';
 import { Link } from 'react-router-dom';
-
+import logo from "@/assets/Logo-Naipunayam/logo.png";
 export default function HomeComponentIntro() {
   const [activeSection, setActiveSection] = useState<number>(0);
   const [showSubtitle, setShowSubtitle] = useState<boolean>(false);
@@ -397,8 +399,17 @@ export default function HomeComponentIntro() {
           transition={{ duration: 5, ease: 'easeInOut' }}
           className="fixed inset-0 z-[9999] bg-gradient-to-b from-zinc-100 via-gray-200 to-gray-300 flex items-center justify-center"
         >
-          <motion.img
+          {/* <motion.img
             src="/src/assets/Logo-Naipunayam/logo.png"
+            alt="Naipunayam Logo"
+            initial={{ scale: 1, opacity: 0 }}
+            animate={{ scale: [1, 1.1, 1], opacity: 1 }}
+            transition={{ duration: 4, ease: 'easeInOut' }}
+            className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[280px] xl:w-[300px]"
+          /> */}
+          
+          <motion.img
+            src={logo}
             alt="Naipunayam Logo"
             initial={{ scale: 1, opacity: 0 }}
             animate={{ scale: [1, 1.1, 1], opacity: 1 }}
