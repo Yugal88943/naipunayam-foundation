@@ -69,13 +69,35 @@ const TimelineSection: React.FC<TimelineSectionProps> = ({ section, index, isAct
         animate={isActive ? "visible" : "hidden"}
         initial="hidden"
       >
-        <h3 className="font-extrabold text-2xl sm:text-3xl text-blue-700 mb-2">{section.title}</h3>
-        <p className="text-base sm:text-lg font-medium text-gray-800 mb-1">{section.text}</p>
-        <ul className="list-disc ml-5 mt-1 text-blue-900 font-semibold">
-          {section.features.map((feat, i) => (
-            <li key={i}>{feat}</li>
-          ))}
-        </ul>
+       <h3 className="font-extrabold text-2xl sm:text-3xl text-blue-700 mb-3 text-center">
+  {section.title}
+</h3>
+<p className="text-base sm:text-lg font-medium text-gray-800 mb-4 text-center">
+  {section.text}
+</p>
+{/* <ul className="space-y-2 flex flex-col items-center justify-center text-center">
+  {section.features.map((feat, i) => (
+    <li
+      key={i}
+      className="flex items-center gap-2 text-blue-700 font-semibold text-sm sm:text-base"
+    >
+      <span className="w-2 h-2 bg-cyan-400 rounded-full" />
+      {feat}
+    </li>
+  ))}
+</ul> */}
+<ul className="mt-2 space-y-3 flex flex-col items-center text-center">
+  {section.features.map((feat, i) => (
+    <li key={i} className="flex items-center gap-2 text-blue-800 font-medium text-sm sm:text-base">
+      <span className="w-2.5 h-2.5 bg-cyan-400 rounded-full animate-ping" />
+      <span>{feat}</span>
+    </li>
+  ))}
+</ul>
+
+
+
+
       </motion.div>
       {/* Dot - HIDDEN on mobile, visible on md+ */}
       <div className="hidden md:flex relative z-20 md:order-2 flex-col items-center order-2">

@@ -5,7 +5,9 @@ import { blogPosts } from "./blogData";
 
 const BlogNewsCards: React.FC = () => {
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 py-10">
+    // <section className="w-full max-w-7xl mx-auto px-4 py-10">
+    <section className="w-full max-w-7xl mx-auto px-4 py-10 bg-gradient-to-br from-white to-gray-50">
+
       <div
         className="
           grid 
@@ -19,7 +21,8 @@ const BlogNewsCards: React.FC = () => {
             key={post.id}
             className={`
               rounded-3xl
-              bg-white/80
+              bg-gray-100/80
+
               shadow-lg
               border
               border-blue-100

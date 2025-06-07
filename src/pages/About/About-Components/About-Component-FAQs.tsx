@@ -1,5 +1,3 @@
-
-
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaRobot, FaUserCircle } from "react-icons/fa";
@@ -62,17 +60,19 @@ export default function AboutComponentFAQs() {
   // Only run the hook for the currently open answer
   const typedAnswer = useTypewriter(openIdx !== null ? faqs[openIdx].answer : "", 13);
 
-  // useEffect(() => {
-  //   if (openIdx !== null && chatRefs.current[openIdx]) {
-  //     chatRefs.current[openIdx]?.scrollIntoView({ behavior: "smooth", block: "start" });
-  //   }
-  // }, [openIdx]);
   useEffect(() => {
     if (openIdx !== null && chatRefs.current[openIdx]) {
-      chatRefs.current[openIdx]?.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(() => {
+        chatRefs.current[openIdx]?.scrollIntoView({
+          behavior: "smooth",
+          block: "nearest",
+          inline: "nearest",
+        });
+        
+      }, 100); // delay slightly to allow open animation
     }
-  }, [typedAnswer, openIdx]); 
-
+  }, [openIdx]);
+  
   return (
     <section className="w-full px-2 sm:px-6 md:px-14 lg:px-32 py-14 md:py-20 bg-gradient-to-br from-sky-50 via-white to-emerald-50">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-sky-600 via-emerald-400 to-blue-500 text-transparent bg-clip-text drop-shadow-lg">

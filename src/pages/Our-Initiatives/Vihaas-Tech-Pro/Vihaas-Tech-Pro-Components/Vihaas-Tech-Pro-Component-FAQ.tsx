@@ -32,7 +32,11 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="w-full bg-white px-4 sm:px-6 md:px-20 py-24">
+    <section 
+    // className="w-full bg-white px-4 sm:px-6 md:px-20 py-24"
+    className="w-full bg-gradient-to-br from-white to-gray-50 px-4 sm:px-6 md:px-10 pt-20 pb-48"
+
+    >
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl font-extrabold font-serif mb-16 text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">
           Frequently Asked Questions

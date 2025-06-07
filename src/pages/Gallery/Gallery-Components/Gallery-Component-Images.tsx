@@ -21,7 +21,11 @@ const GalleryComponentImages: React.FC = () => {
 
   return (
     <>
-      <section className="w-full px-4 py-8 max-w-6xl mx-auto">
+      {/* <section className="w-full px-4 py-8 max-w-6xl mx-auto"> */}
+      {/* <section className="w-full px-4 py-8 max-w-6xl mx-auto bg-gradient-to-br from-white to-gray-50"> */}
+      <div className="w-full bg-gradient-to-br from-white to-gray-50">
+  <section className="px-4 py-8 max-w-6xl mx-auto">
+
         <div
           className="grid gap-8"
           style={{
@@ -83,6 +87,7 @@ const GalleryComponentImages: React.FC = () => {
           />
         </svg>
       </div>
+      </div>
 
       {/* Modal in Portal, always on top */}
       {selectedImg !== null &&
@@ -118,7 +123,9 @@ const GalleryComponentImages: React.FC = () => {
           </div>,
           document.body
         )}
+        
     </>
+    
   );
 };
 

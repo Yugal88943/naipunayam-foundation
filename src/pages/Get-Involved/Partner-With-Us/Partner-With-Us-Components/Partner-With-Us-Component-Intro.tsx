@@ -161,7 +161,9 @@ const cardVariants = {
 
 const PartnerWithUsComponentIntro: React.FC = () => {
   return (
-    <section className="relative w-full py-16 px-3 md:px-10 overflow-x-clip">
+    // <section className="relative w-full py-16 px-3 md:px-10 overflow-x-clip">
+    <section className="relative w-full py-16 px-3 md:px-10 overflow-x-clip bg-gradient-to-br from-white to-gray-50">
+
       {/* Decorative Background */}
       <div className="absolute inset-0 pointer-events-none -z-10" aria-hidden="true">
         <div className="absolute left-[-120px] top-0 w-[350px] h-[350px] rounded-full bg-gradient-to-br from-blue-100/70 via-blue-200/40 to-purple-100/30 blur-2xl opacity-70" />

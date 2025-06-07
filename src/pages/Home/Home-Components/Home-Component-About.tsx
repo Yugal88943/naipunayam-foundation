@@ -95,20 +95,37 @@ export default function HomeComponentAbout() {
       tabIndex={0}
     >
       <div className="bg-white/90 shadow-xl rounded-2xl p-6 md:p-8 border border-blue-200 hover:shadow-2xl hover:border-blue-400 hover:bg-blue-50 min-h-[180px] w-full flex flex-col justify-center relative overflow-visible">
-        <motion.p className={`${block.textColor} italic font-medium font-serif text-lg md:text-xl leading-relaxed tracking-wide text-justify transition-colors duration-200 group-hover:opacity-80`}>
+       
+       
+        {/* <motion.p className={`${block.textColor} italic font-medium font-serif text-lg md:text-xl leading-relaxed tracking-wide text-justify transition-colors duration-200 group-hover:opacity-80`}>
           {block.icon}
           {block.text}
           {!isApple && (
             <motion.span className="block h-0.5 bg-gradient-to-r from-blue-300 via-green-400 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 mt-2" />
           )}
         </motion.p>
+         */}
+         <motion.div className="text-center transition-all duration-300 group-hover:opacity-90">
+  <p className={`${block.textColor} italic font-medium font-serif text-lg md:text-xl leading-loose md:leading-relaxed tracking-wide px-2 sm:px-4`}>
+    <span className="block mb-4 text-3xl">{block.icon}</span>
+    {block.text}
+  </p>
+  {!isApple && (
+    <motion.span className="mx-auto block h-0.5 w-24 bg-gradient-to-r from-blue-300 via-green-400 to-purple-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300 mt-5" />
+  )}
+</motion.div>
+
+         
       </div>
     </motion.div>
   );
 
   return (
-    <section className="relative w-full bg-white py-20 px-6 sm:px-10 md:px-20 lg:px-32 overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col z-10 relative">
+    // <section className="relative w-full bg-white py-20 px-6 sm:px-10 md:px-20 lg:px-32 overflow-hidden">
+    <section className="relative w-full bg-[#f9f9f9] py-20 px-6 sm:px-10 md:px-20 lg:px-32 overflow-hidden">
+
+   
+   <div className="max-w-7xl mx-auto flex flex-col z-10 relative">
         <motion.h2
           className="text-3xl md:text-4xl font-serif font-extrabold text-gray-900 mb-12 text-center"
           variants={fadeUp}

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Blog_Vihaas_Design_3 from "@/assets/Blog-News-Section/vihaas-1.jpeg";
 import Blog_Vihaas_Design_2 from "@/assets/Blog-News-Section/soldering-2.jpeg";
 import Blog_Vihaas_Design_5 from "@/assets/Blog-News-Section/vihaas-2.jpeg";
+import { useNavigate } from "react-router-dom";
 
 // Card data
 const riverCards = [
@@ -43,8 +44,22 @@ const cardVariants = {
   visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.9, ease: "easeOut" } }
 };
 
-const BlogNewsDetailVihaasDesign: React.FC = () => (
-  <section className="relative max-w-5xl mx-auto py-10 px-2 md:px-6 my-16">
+const BlogNewsDetailVihaasDesign: React.FC = () => {
+ 
+  const navigate = useNavigate();
+ return(
+ <section className="relative max-w-5xl mx-auto py-10 px-2 md:px-6 my-16">
+    
+     {/* Back Button */}
+     <div className="max-w-3xl mr-auto mb-3 px-4">
+        <button
+          onClick={() => navigate(-1)}
+          className="flex items-center gap-2 text-base md:text-lg font-semibold text-white bg-blue-500 hover:bg-blue-400 px-5 py-2 rounded-full shadow-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg -mb-1"
+        >
+          <span className="text-lg">←</span> Back
+        </button>
+      </div>
+    
     {/* River line & dots */}
     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-2 z-0">
       <div className="w-full h-full bg-gradient-to-b from-blue-200/40 via-purple-100/10 to-white rounded-full blur-lg opacity-60" />
@@ -121,6 +136,7 @@ const BlogNewsDetailVihaasDesign: React.FC = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default BlogNewsDetailVihaasDesign;

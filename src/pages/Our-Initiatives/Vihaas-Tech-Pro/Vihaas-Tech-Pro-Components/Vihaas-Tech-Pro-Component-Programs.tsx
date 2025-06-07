@@ -12,7 +12,7 @@ const programs = [
     title: "PCB Design & Hardware",
     icon: <FaLaptopCode />,
     color: "bg-blue-500",
-  },
+  },  
   {
     title: "Mechanical Drawings & CAD",
     icon: <FaDraftingCompass />,
@@ -32,7 +32,11 @@ export default function ProgramsSection() {
     
     <section
   id="get-involved"
-  className="w-full bg-white px-4 sm:px-6 md:px-10 pt-20 pb-48"
+  // className="w-full bg-white px-4 sm:px-6 md:px-10 pt-20 pb-48"
+  // className="w-full bg-white px-4 sm:px-6 md:px-10 pt-20 pb-48"
+  className="w-full bg-[#f9f9f9] px-4 sm:px-6 md:px-10 pt-20 pb-48"
+
+
 >
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
