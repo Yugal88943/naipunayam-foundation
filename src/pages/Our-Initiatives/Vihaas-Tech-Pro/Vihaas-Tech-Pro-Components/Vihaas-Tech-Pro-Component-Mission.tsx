@@ -55,7 +55,7 @@ export default function VihaasTechProComponentMission() {
 
         {/* Mission Quote */}
         <motion.blockquote
-          className="italic text-lg sm:text-xl font-semibold text-teal-900 tracking-wide leading-relaxed max-w-3xl mx-auto text-justify sm:text-center"
+          className="italic text-lg sm:text-xl font-semibold text-teal-900 tracking-wide leading-relaxed max-w-3xl mx-auto text-center sm:text-center"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.3 }}
         >

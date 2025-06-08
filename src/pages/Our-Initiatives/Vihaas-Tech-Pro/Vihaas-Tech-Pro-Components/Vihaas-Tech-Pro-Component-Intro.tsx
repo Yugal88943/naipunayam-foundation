@@ -89,7 +89,7 @@ export default function VihaasTechProUniqueIntro() {
           </div>
 
           {/* Feature Box Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-stretch">
             {[
               {
                 Icon: FaCogs,
@@ -112,7 +112,7 @@ export default function VihaasTechProUniqueIntro() {
             ].map(({ Icon, color, title, desc }, idx) => (
               <motion.div
                 key={idx}
-                className="bg-white rounded-xl p-5 shadow-md border border-gray-100 text-center cursor-default"
+                className="bg-white rounded-xl p-5 shadow-md border border-gray-100 text-center cursor-default h-full flex flex-col justify-start"
                 variants={fadeIn}
                 whileHover={boxHover.whileHover}
               >

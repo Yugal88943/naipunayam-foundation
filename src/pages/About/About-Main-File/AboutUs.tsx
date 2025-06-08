@@ -1,5 +1,4 @@
 // src/pages/About/About-Main-File/AboutUs.tsx
-
 import AboutComponentIntro from '../About-Components/About-Component-Intro';
 import AboutComponentBackgroundImages from '../About-Components/About-Component-Background-Images';
 import AboutComponentFounders from '../About-Components/About-Component-Founders';
@@ -9,14 +8,10 @@ import AboutComponentImpactAchieved from '../About-Components/About-Component-Im
 import AboutComponentWhatPeopleSay from '../About-Components/About-Component-What-People-Say';
 import AboutComponentFAQs from '../About-Components/About-Component-FAQs';
 
-
-// import other About components as you create them
-
 const AboutUs = () => {
   return (
-    <div>
+    <div className="relative">
       <AboutComponentBackgroundImages />
-      {/* This component can be used for background images or effects */}  
       <AboutComponentIntro />
       <AboutComponentFounders />
       <AboutComponentMission />
@@ -24,7 +19,6 @@ const AboutUs = () => {
       <AboutComponentImpactAchieved />
       <AboutComponentWhatPeopleSay />
       <AboutComponentFAQs />
-      {/* Add more About section components below as you build them */}
     </div>
   );
 };

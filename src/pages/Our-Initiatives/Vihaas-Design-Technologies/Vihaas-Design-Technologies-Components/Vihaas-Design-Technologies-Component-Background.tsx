@@ -6,12 +6,11 @@ const VihaasDesignTechnologiesComponentBackground: React.FC = () => (
   <section className="w-full mt-[1px]">
     <video
       src={vihaasDesignVideo}
-      // alt="Vihaas Design Technologies"
+      autoPlay
+      muted
+      playsInline
       className="w-full aspect-[16/9] object-cover object-center"
       draggable={false}
-      autoPlay
-      
-      muted
     />
   </section>
 );

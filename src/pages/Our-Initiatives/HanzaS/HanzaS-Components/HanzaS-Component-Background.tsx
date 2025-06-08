@@ -10,10 +10,8 @@ const HanzaSComponentBackground: React.FC = () => (
     <video
       src={hanzaSVideo}
       autoPlay
-      // loop
       muted
       playsInline
-      // alt="HanzaS Initiative"
       className="w-full aspect-[16/9] object-cover object-center"
       draggable={false}
       

@@ -4,13 +4,11 @@ import vihaasTechProVideo from "@/assets/Our-Initiatives-Section/vihaas_tech_vid
 const VihaasTechProComponentBackground: React.FC = () => (
   <section className="w-full mt-[1px]">
     <video
-      autoPlay
-      // loop
-      muted
-      // playsInline
       src={vihaasTechProVideo}
-      // alt="Vihaas Tech Pro"
       className="w-full aspect-[16/9] object-cover object-center"
+      autoPlay
+      muted
+      playsInline
       draggable={false}
       
     />

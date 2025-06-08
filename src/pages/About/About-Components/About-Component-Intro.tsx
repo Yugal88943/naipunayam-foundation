@@ -1,7 +1,7 @@
 import aboutUs2 from "@/assets/About-Section/about-2.jpg";
 import vihaasTech2 from "@/assets/About-Section/vihaas-tech-2.jpg";
 import vihaasTech9 from "@/assets/About-Section/vihaas-tech-9.jpeg";
-import { motion, useInView, useScroll, useSpring } from "framer-motion";
+import { motion, useInView, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 const timelineSections = [
@@ -53,7 +53,12 @@ const TimelineSection: React.FC<TimelineSectionProps> = ({ section, index, isAct
   const isLeft = index % 2 === 0;
   const variants = {
     hidden: { opacity: 0.4, x: isLeft ? -60 : 60, filter: "blur(3px)" },
-    visible: { opacity: 1, x: 0, filter: "blur(0px)", transition: { duration: 0.9, type: "spring" } }
+    visible: {
+      opacity: 1,
+      x: 0,
+      filter: "blur(0px)",
+      transition: { duration: 0.9, type: "spring" }
+    }
   };
 
   return (
@@ -69,40 +74,38 @@ const TimelineSection: React.FC<TimelineSectionProps> = ({ section, index, isAct
         animate={isActive ? "visible" : "hidden"}
         initial="hidden"
       >
-       <h3 className="font-extrabold text-2xl sm:text-3xl text-blue-700 mb-3 text-center">
-  {section.title}
-</h3>
-<p className="text-base sm:text-lg font-medium text-gray-800 mb-4 text-center">
-  {section.text}
-</p>
-{/* <ul className="space-y-2 flex flex-col items-center justify-center text-center">
-  {section.features.map((feat, i) => (
-    <li
-      key={i}
-      className="flex items-center gap-2 text-blue-700 font-semibold text-sm sm:text-base"
-    >
-      <span className="w-2 h-2 bg-cyan-400 rounded-full" />
-      {feat}
-    </li>
-  ))}
-</ul> */}
-<ul className="mt-2 space-y-3 flex flex-col items-center text-center">
-  {section.features.map((feat, i) => (
-    <li key={i} className="flex items-center gap-2 text-blue-800 font-medium text-sm sm:text-base">
-      <span className="w-2.5 h-2.5 bg-cyan-400 rounded-full animate-ping" />
-      <span>{feat}</span>
-    </li>
-  ))}
-</ul>
+        <h3 className="font-extrabold text-2xl sm:text-3xl text-blue-700 mb-3 text-center">
+          {section.title}
+        </h3>
 
+        <p className="text-base sm:text-lg font-medium text-gray-800 mb-2 text-center">
+          {section.text}
+        </p>
 
-
-
+        <ul className="mt-4 space-y-2 mb-4 flex flex-col items-center text-center">
+          {section.features.map((feat, i) => (
+            <li
+              key={i}
+              className="flex items-center gap-2 text-blue-800 font-medium text-sm sm:text-base"
+            >
+              <span className="w-2.5 h-2.5 bg-cyan-400 rounded-full animate-ping" />
+              <span>{feat}</span>
+            </li>
+          ))}
+        </ul>
       </motion.div>
+
       {/* Dot - HIDDEN on mobile, visible on md+ */}
       <div className="hidden md:flex relative z-20 md:order-2 flex-col items-center order-2">
-        <span className={`block w-7 h-7 rounded-full border-4 border-white shadow-lg ${isActive ? "bg-gradient-to-br from-blue-600 to-cyan-400" : "bg-gradient-to-br from-blue-500 to-cyan-400 opacity-60"}`} />
+        <span
+          className={`block w-7 h-7 rounded-full border-4 border-white shadow-lg ${
+            isActive
+              ? "bg-gradient-to-br from-blue-600 to-cyan-400"
+              : "bg-gradient-to-br from-blue-500 to-cyan-400 opacity-60"
+          }`}
+        />
       </div>
+
       {/* IMAGE LAST ON MOBILE */}
       <motion.div
         className={`
@@ -127,42 +130,44 @@ const TimelineSection: React.FC<TimelineSectionProps> = ({ section, index, isAct
 };
 
 const AboutTimeline = () => {
-  // Container for scroll tracking
   const containerRef = useRef(null);
 
-  // This will track scroll progress in the container (from 0 to 1)
+  // Ensure container is relative (fixes Framer Motion scroll warning)
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
   });
 
-  // Animate the timeline progress bar
-  const scaleY = useSpring(scrollYProgress, { stiffness: 120, damping: 20 });
+  const scaleY = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 20
+  });
 
-  // For dot highlighting
   const sectionRefs = timelineSections.map(() => useRef(null));
-  const inViews = sectionRefs.map(ref => useInView(ref, { amount: 0.6, once: false }));
+  const inViews = sectionRefs.map((ref) =>
+    useInView(ref, { amount: 0.6, once: false })
+  );
 
   return (
     <section
-      className="relative min-h-screen py-12 px-2 sm:px-4 bg-gradient-to-br from-blue-100 via-white to-cyan-100 overflow-x-hidden"
       ref={containerRef}
+      className="relative min-h-screen py-12 px-2 sm:px-4 bg-gradient-to-br from-blue-100 via-white to-cyan-100 overflow-x-hidden"
     >
-      <div className="w-full max-w-2xl md:max-w-5xl mx-auto relative">
-        {/* Vertical timeline line for md+ */}
+      <div className="relative w-full max-w-2xl md:max-w-5xl mx-auto">
+        {/* Timeline Line */}
         <motion.div
           className="hidden md:block absolute left-1/2 top-0 -translate-x-1/2 h-full w-2 bg-gradient-to-b from-cyan-300 to-blue-300 rounded-full z-0"
           aria-hidden
         >
-          {/* Progress indicator */}
           <motion.div
             className="absolute left-1/2 top-0 -translate-x-1/2 w-2 bg-gradient-to-b from-blue-600 to-cyan-400 rounded-full origin-top"
             style={{ height: "100%", scaleY }}
           />
         </motion.div>
+
         {/* Timeline Sections */}
         {timelineSections.map((section, idx) => (
-          <div ref={sectionRefs[idx]} key={idx}>
+          <div ref={sectionRefs[idx]} key={idx} className="relative">
             <TimelineSection
               section={section}
               index={idx}
