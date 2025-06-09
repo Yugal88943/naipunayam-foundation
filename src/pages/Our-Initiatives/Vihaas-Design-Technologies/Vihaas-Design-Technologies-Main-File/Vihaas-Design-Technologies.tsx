@@ -6,21 +6,16 @@ import VihaasDesignTechnologiesComponentProgramIntro from "../Vihaas-Design-Tech
 import VihaasWhoCanJoinSection from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-WhoCanJoin";
 import VisionComponent from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-Vision";
 import VihaasDesignTechnologiesComponentFAQ from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-FAQ";
-// import { FlippableCardsProgramIntro } from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-ProgramIntro";
 
 const VihaasDesignTechnologies: React.FC = () => (
   <div>
-    {/* Background/Hero Image */}
     <VihaasDesignTechnologiesComponentBackground />
-    
     <VihaasDesignTechnologiesComponentAbout />
     <VisionComponent />
     <VihaasDesignTechnologiesComponentIntro />
     <VihaasDesignTechnologiesComponentProgramIntro />
-    {/* <FlippableCardsProgramIntro /> */}
     <VihaasWhoCanJoinSection />
     <VihaasDesignTechnologiesComponentFAQ />
-    
   </div>
 );
 

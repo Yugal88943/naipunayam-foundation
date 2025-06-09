@@ -1,5 +1,4 @@
 // HanzaS.tsx
-
 import React from "react";
 import HanzaSComponentBackground from '../HanzaS-Components/HanzaS-Component-Background';
 import HanzaSComponentIntro from "../HanzaS-Components/HanzaS-Component-Intro";

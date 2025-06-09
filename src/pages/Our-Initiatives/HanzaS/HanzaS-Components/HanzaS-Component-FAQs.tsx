@@ -34,11 +34,7 @@ const faqs = [
     title: "How long is the program?",
     desc: "The typical duration is a few weeks. Full details are shared after enrollment.",
   },
-//   {
-//     title: "Is job support available?",
-//     desc: "Yes! We help with job links or guidance for starting a small stitching business.",
-//   },
-  {
+{
     title: "How can I support?",
     desc: "Spread the word, or volunteer! Contact us for ways to help.",
   },

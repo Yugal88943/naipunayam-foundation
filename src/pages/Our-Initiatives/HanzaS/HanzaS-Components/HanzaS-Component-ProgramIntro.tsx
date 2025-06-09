@@ -3,21 +3,6 @@ import { motion } from "framer-motion";
 
 const HanzaSComponentProgramIntro: React.FC = () => {
   const threadMarker = (
-    // <motion.div
-    //   className="text-purple-400 text-xl sm:text-2xl"
-    //   initial={{ rotate: -30, scale: 0, opacity: 0 }}
-    //   whileInView={{ rotate: 0, scale: 1, opacity: 1 }}
-    //   viewport={{ once: false }}
-    //   transition={{
-    //     duration: 0.6,
-    //     type: "spring",
-    //     stiffness: 200,
-    //     damping: 12,
-    //   }}
-    // >
-    //   🪡
-    // </motion.div>
-    
     <motion.div
   className="text-purple-400 text-xl sm:text-2xl leading-none"
   initial={{ rotate: -30, scale: 0, opacity: 0 }}

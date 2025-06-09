@@ -13,7 +13,7 @@ export const blogPosts = [
     title: "HanzaS: Built by Women, Powered by Purpose",
     snippet: "At HanzaS, fashion is more than fabric. We’re not just selling clothes; we’re building a brand that celebrates women as creators, earners, and leaders.",
     image: Blog_HanzaS_1,
-    link: "/blog-news/1",
+    link: "/blog-news/women_empowerment",
     bgColor: "bg-pink-50"
   },
   {
@@ -22,7 +22,7 @@ export const blogPosts = [
     title: "HanzaS: A Story Stitched with Strength",
     snippet: "A mother and daughter began with courage and craft in a Rajasthan village, creating a movement of over 200 artisans. Discover how HanzaS became a symbol of hope and heritage.",
     image: Blog_HanzaS_2,
-    link: "/blog-news/2",
+    link: "/blog-news/women_empowerment_hanzas",
     bgColor: "bg-yellow-50"
   },
   {
@@ -65,5 +65,5 @@ export const blogPosts = [
     link: "/blog-news/vihaas-tech-pro-2",
     bgColor: "bg-green-50",
   },
-  // Add more posts as needed
+
 ];

@@ -46,32 +46,15 @@
     </span>
   </div>
 
-        
         {/* Title */}
-        {/* <h3 className="text-xl font-semibold text-emerald-800 dark:text-emerald-200 mb-1 tracking-wide text-center w-full">
-          Call Us
-        </h3> */}
+       
         <h3
   className="text-xl font-bold mb-1 tracking-wide text-center w-full bg-gradient-to-r from-emerald-600 via-teal-500 to-green-500 text-transparent bg-clip-text drop-shadow-sm"
 >
   Call Us
 </h3>
-
-        {/* Phone number */}
-        {/* <a
-          href="tel:+919876543210"
-          className="
-            text-2xl font-bold text-emerald-700 dark:text-emerald-200 mb-2
-            hover:text-teal-700 transition-colors
-            flex items-center justify-center gap-2
-            w-full break-words
-          "
-          style={{ wordBreak: "break-word", textAlign: "center" }}
-        >
-          +91 9876543210
-        </a> */}
         <a
-  href="tel:+919876543210"
+  href="tel:+91 88755 75559"
   className="
     text-2xl font-extrabold mb-2
     hover:text-teal-700 transition-colors
@@ -82,18 +65,12 @@
   "
   style={{ wordBreak: "break-word", textAlign: "center" }}
 >
-  +91 9876543210
+  +91 88755 75559
 </a>
-
-        
-        {/* <p className="text-base text-gray-600 dark:text-gray-300 mt-3 text-center w-full break-words">
-          We’re here for you Monday–Saturday, 10am–6pm.<br />
-          <span className="font-medium text-emerald-500">Let’s talk!</span>
-        </p> */}
         <p
   className="text-base font-medium mt-3 text-center w-full break-words bg-gradient-to-r from-emerald-600 via-teal-500 to-green-500 text-transparent bg-clip-text drop-shadow-sm"
 >
-  We’re here for you <span className="font-bold underline decoration-emerald-400">Monday–Saturday</span>, 10am–6pm.<br />
+  We’re here for you <span className="font-bold underline decoration-emerald-400">Monday–Saturday</span>, 9:30 AM – 6 PM.<br />
   <span className="font-bold text-emerald-500 bg-none drop-shadow-none">Let’s talk!</span>
 </p>
 

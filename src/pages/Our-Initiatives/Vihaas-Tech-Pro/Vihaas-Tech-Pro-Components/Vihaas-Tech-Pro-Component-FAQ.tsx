@@ -37,8 +37,7 @@ const faqs = [
 export default function FAQSection() {
   return (
     <section 
-    // className="w-full bg-white px-4 sm:px-6 md:px-20 py-24"
-    className="w-full bg-gradient-to-br from-white to-gray-50 px-4 sm:px-6 md:px-10 pt-20 pb-8"
+    className="w-full bg-[#f9f9f9] px-4 sm:px-6 md:px-10 pt-20 pb-8"
 
     >
       <div className="max-w-5xl mx-auto text-center">

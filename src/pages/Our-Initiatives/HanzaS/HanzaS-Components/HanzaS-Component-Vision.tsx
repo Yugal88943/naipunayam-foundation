@@ -50,20 +50,21 @@ const HanzaSComponentVision: React.FC = () => {
               Our Vision
             </h2>
             <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-3 text-gray-100  drop-shadow-sm bold">
-            <b> At HanzaS, fashion meets innovation with a deep respect for tradition. We are committed to
-redefining style through a seamless fusion of contemporary trends and timeless elegance.
-Every collection showcases high-quality materials, refined craftsmanship, and designs
-that empower and inspire confidence.
-Our passion lies in preserving the rich heritage of traditional craftsmanship. Each
-handcrafted piece—whether fashion, home décor, or accessory—is thoughtfully created to
-ensure originality, durability, and beauty. We believe every item tells a story—of culture,
-artistry, and purpose.
-  </b></p>
+              <b> At HanzaS, fashion meets innovation with a deep respect for tradition. We are committed to
+                redefining style through a seamless fusion of contemporary trends and timeless elegance.
+                Every collection showcases high-quality materials, refined craftsmanship, and designs
+                that empower and inspire confidence.
+                Our passion lies in preserving the rich heritage of traditional craftsmanship. Each
+                handcrafted piece—whether fashion, home décor, or accessory—is thoughtfully created to
+                ensure originality, durability, and beauty. We believe every item tells a story—of culture,
+                artistry, and purpose.
+              </b>
+            </p>
             <p className="text-sm sm:text-base md:text-lg leading-relaxed text-gray-100 drop-shadow-sm">
-             <b> With HanzaS, you don&#39;t just wear or own a product—you embrace a journey. A journey of
-artistry, comfort, and elegance that celebrates individuality while honoring the legacy of
-skilled artisans. Let your style speak with meaning, and your space reflect heritage—elevated
-by the spirit of HanzaS.   </b> </p>
+              <b> With HanzaS, you don&#39;t just wear or own a product—you embrace a journey. A journey of
+            artistry, comfort, and elegance that celebrates individuality while honoring the legacy of
+            skilled artisans. Let your style speak with meaning, and your space reflect heritage—elevated
+            by the spirit of HanzaS.   </b> </p>
           </motion.div>
         </div>
       </div>

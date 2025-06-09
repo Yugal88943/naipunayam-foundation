@@ -7,7 +7,6 @@ import FAQSection from "../Vihaas-Tech-Pro-Components/Vihaas-Tech-Pro-Component-
 
 const VihaasTechPro: React.FC = () => (
 <div>
-   
     <VihaasTechProComponentBackground />
     <VihaasTechProComponentIntro />
     <VihaasTechProComponentMission />

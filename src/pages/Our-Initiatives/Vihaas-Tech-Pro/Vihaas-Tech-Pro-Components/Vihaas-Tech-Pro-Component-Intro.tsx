@@ -37,8 +37,9 @@ export default function VihaasTechProUniqueIntro() {
       <div className="max-w-7xl mx-auto grid xl:grid-cols-2 gap-10 xl:gap-14 items-center">
 
         {/* LEFT – Image */}
-        {/* <motion.div
-          className="rounded-2xl overflow-hidden shadow-xl order-2 lg:order-1 w-full max-w-xl mx-auto"
+              
+        <motion.div
+          className="rounded-2xl overflow-hidden shadow-xl order-last xl:order-first w-full max-w-xl mx-auto"
           variants={fadeIn}
           initial="initial"
           whileInView="whileInView"
@@ -49,21 +50,7 @@ export default function VihaasTechProUniqueIntro() {
             alt="Tech training in action"
             className="w-full h-full object-cover"
           />
-        </motion.div> */}
-
-<motion.div
-  className="rounded-2xl overflow-hidden shadow-xl order-last xl:order-first w-full max-w-xl mx-auto"
-  variants={fadeIn}
-  initial="initial"
-  whileInView="whileInView"
-  viewport={{ once: true }}
->
-  <img
-    src={vihaasTechImage}
-    alt="Tech training in action"
-    className="w-full h-full object-cover"
-  />
-</motion.div>
+        </motion.div>
 
         {/* RIGHT – Text */}
         <motion.div

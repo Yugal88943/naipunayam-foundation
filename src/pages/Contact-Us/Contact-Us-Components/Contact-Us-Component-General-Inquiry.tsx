@@ -28,15 +28,7 @@ const GeneralInquiryCard: React.FC = () => {
         <FaRegQuestionCircle />
         General Inquiry
       </div>
-      {/* Main Icon */}
-      {/* <div className="flex flex-col items-center gap-3 mb-4 mt-8 w-full">
-        <span className="rounded-full bg-white shadow p-4 border-2 border-blue-400">
-          <FaEnvelope className="text-4xl text-blue-500" />
-        </span>
-        <span className="text-xl font-semibold text-blue-700 dark:text-blue-200">
-          Get in Touch!
-        </span>
-      </div> */}
+    
       <div className="flex flex-col items-center gap-3 mb-4 mt-8 w-full group">
   <span className="rounded-full bg-white shadow p-4 border-2 border-blue-400 transition-all duration-300 group-hover:scale-110 group-hover:shadow-blue-300">
     <FaEnvelope className="text-4xl text-blue-500 transition-all duration-300 group-hover:animate-bounce group-hover:drop-shadow-[0_0_10px_rgba(59,130,246,0.7)]" />
@@ -45,8 +37,6 @@ const GeneralInquiryCard: React.FC = () => {
     Get in Touch!
   </span>
 </div>
-
-      
       {/* Email */}
       <a
         href="mailto:info@naipunayamfoundation.org"
@@ -60,20 +50,12 @@ const GeneralInquiryCard: React.FC = () => {
         <FaPaperPlane className="text-base" />
         <span className="break-words">info@naipunayamfoundation.org</span>
       </a>
-      {/* <p className="text-base text-gray-600 dark:text-gray-300 mt-2 mb-1 w-full break-words">
-        For any questions, ideas, or support, email us.
-      </p> */}
+    
       <p
   className="text-base font-medium mt-2 mb-1 w-full break-words bg-gradient-to-r from-blue-600 via-cyan-500 to-teal-500 text-transparent bg-clip-text drop-shadow-sm"
 >
   For any <span className="font-bold">questions</span>, ideas, or <span className="font-bold">support</span>, email us.
 </p>
-
-      
-      {/* <span className="font-medium text-blue-600 dark:text-cyan-300 text-sm w-full break-words">
-        We’re always listening!
-      </span> */}
-      
       <span className="font-medium text-blue-600 dark:text-cyan-300 text-sm w-full break-words mb-4">
   We’re always listening!
 </span>

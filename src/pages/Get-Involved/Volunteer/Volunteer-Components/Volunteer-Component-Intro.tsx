@@ -3,50 +3,6 @@ import { motion } from "framer-motion";
 import { FaHandsHelping, FaLaptop, FaPeopleCarry } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-// function BubbleBG() {
-//   const bubbles = useMemo(
-//     () =>
-//       [...Array(8)].map(() => ({
-//         x: Math.random() * 100 + "%",
-//         y: Math.random() * 100 + "%",
-//         width: 64 + Math.random() * 60,
-//         height: 64 + Math.random() * 90,
-//         scale: Math.random() * 0.7 + 0.5,
-//         duration: 13 + Math.random() * 9,
-//         opacityStart: 0.42 + Math.random() * 0.2,
-//         opacityEnd: 0.44 + Math.random() * 0.2,
-//       })),
-//     []
-//   );
-
-  // return (
-    // <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
-      {/* {bubbles.map((b, i) => (
-        <motion.div
-          key={i}
-          initial={{ x: b.x, y: b.y, scale: b.scale, opacity: b.opacityStart }}
-          animate={{
-            y: ["10%", "100%", "0%"],
-            x: [b.x, Math.random() * 100 + "%"],
-            opacity: [b.opacityStart, 0.27, b.opacityEnd],
-          }}
-          transition={{
-            duration: b.duration,
-            repeat: Infinity,
-            repeatType: "mirror",
-          }}
-          className="absolute bg-gradient-to-br from-cyan-500/80 to-sky-400 rounded-full"
-          style={{
-            width: `${b.width}px`,
-            height: `${b.height}px`,
-            filter: "blur(2.5px)",
-          }}
-        />
-      ))} */}
-    // </div>
-  // );
-// }
-
 const opportunities = [
   {
     icon: <FaHandsHelping className="text-cyan-600 drop-shadow-lg text-4xl md:text-5xl animate-pulse" />,

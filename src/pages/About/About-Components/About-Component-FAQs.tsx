@@ -69,7 +69,7 @@ export default function AboutComponentFAQs() {
 
   return (
     <section className="w-full px-3 sm:px-6 md:px-14 lg:px-32 py-14 md:py-20 bg-gradient-to-br from-sky-50 via-white to-emerald-50">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 bg-gradient-to-r from-sky-600 via-emerald-400 to-blue-500 text-transparent bg-clip-text drop-shadow-lg">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 pb-2 bg-gradient-to-r from-sky-600 via-emerald-400 to-blue-500 text-transparent bg-clip-text drop-shadow-lg">
         Ask Us Anything! <span className="text-2xl md:text-3xl">💬</span>
       </h2>
 

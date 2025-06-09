@@ -113,119 +113,59 @@ export default function ContactUsComponentIntro() {
             Let's Connect with Naipunayam Foundation
           </h1>
 
-          {/* Subtitle, not boxed */}
-          {/* <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
+          <motion.p
+            initial={{ opacity: 0, y: 30, scale: 0.98 }}
+            animate={{
+              opacity: 1,
+              y: [0, -6, 0, 5, 0],         // gentle up/down float
+              scale: [1, 1.01, 0.99, 1],   // very light scale pulse
+              transition: {
+                duration: 6,
+                repeat: Infinity,
+                repeatType: "mirror",
+                ease: "easeInOut",
+              },
+            }}
+            transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
             className="
               max-w-2xl text-center text-base md:text-lg font-semibold
               px-4 py-2
               bg-gradient-to-r from-white/90 to-emerald-50/90
               rounded-xl shadow-sm
-              text-fuchsia-700
               tracking-wide border border-fuchsia-100/40
               flex items-center justify-center gap-2
               mx-auto mt-2
-              "
+              bg-clip-padding
+            "
             style={{
               background: "linear-gradient(120deg,#f5f3ffcc,#e0f2f1cc 100%)",
               boxShadow: "0 1px 12px 0 rgba(99,102,241,0.08)",
               backdropFilter: "blur(5px)",
             }}
           >
-            <span className="animate-pulse text-xl">🤝</span>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 to-emerald-500 font-bold">
-              We're here to help you. Whether you want to volunteer, collaborate, or have any questions, our team is eager to connect and support you.
-            </span>
-            <span className="animate-pulse text-xl">✨</span>
-          </motion.p> */}
-          {/* <motion.p
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-  className="
-    max-w-2xl text-center text-base md:text-lg font-semibold
-    px-4 py-2
-    bg-gradient-to-r from-white/90 to-emerald-50/90
-    rounded-xl shadow-sm
-    tracking-wide border border-fuchsia-100/40
-    flex items-center justify-center gap-2
-    mx-auto mt-2
-    bg-clip-padding
-  "
-  style={{
-    background: "linear-gradient(120deg,#f5f3ffcc,#e0f2f1cc 100%)",
-    boxShadow: "0 1px 12px 0 rgba(99,102,241,0.08)",
-    backdropFilter: "blur(5px)",
-  }}
->
-  <span className="animate-pulse text-xl">🤝</span>
-  <span className="bg-gradient-to-r from-fuchsia-600 via-emerald-600 to-indigo-600 bg-clip-text text-transparent font-extrabold drop-shadow">
-    We’re here to help you.
-  </span>
-  <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 via-indigo-600 to-emerald-500 font-bold drop-shadow-sm ml-1">
-    Whether you want to <span className="text-emerald-500 font-extrabold">volunteer</span>, <span className="text-fuchsia-600 font-extrabold">collaborate</span>,
-    or have any <span className="text-indigo-600 font-extrabold">questions</span>,
-    our team is eager to <span className="text-pink-500 font-extrabold">connect</span> and <span className="text-emerald-500 font-extrabold">support</span> you.
-  </span>
-  <span className="animate-pulse text-xl">✨</span>
-</motion.p> */}
-<motion.p
-  initial={{ opacity: 0, y: 30, scale: 0.98 }}
-  animate={{
-    opacity: 1,
-    y: [0, -6, 0, 5, 0],         // gentle up/down float
-    scale: [1, 1.01, 0.99, 1],   // very light scale pulse
-    transition: {
-      duration: 6,
-      repeat: Infinity,
-      repeatType: "mirror",
-      ease: "easeInOut",
-    },
-  }}
-  transition={{ duration: 1.2, delay: 0.4, ease: "easeOut" }}
-  className="
-    max-w-2xl text-center text-base md:text-lg font-semibold
-    px-4 py-2
-    bg-gradient-to-r from-white/90 to-emerald-50/90
-    rounded-xl shadow-sm
-    tracking-wide border border-fuchsia-100/40
-    flex items-center justify-center gap-2
-    mx-auto mt-2
-    bg-clip-padding
-  "
-  style={{
-    background: "linear-gradient(120deg,#f5f3ffcc,#e0f2f1cc 100%)",
-    boxShadow: "0 1px 12px 0 rgba(99,102,241,0.08)",
-    backdropFilter: "blur(5px)",
-  }}
->
-  <motion.span
-    className="animate-pulse text-xl"
-    animate={{
-      rotate: [0, 10, -10, 0],
-      transition: { repeat: Infinity, duration: 3, ease: "easeInOut" }
-    }}
-  >🤝</motion.span>
-  <span className="font-extrabold bg-gradient-to-r from-fuchsia-600 via-emerald-600 to-indigo-600 bg-clip-text text-transparent drop-shadow">
-    We’re here to help you.
-  </span>
-  <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 via-indigo-600 to-emerald-500 font-bold drop-shadow-sm ml-1">
-    Whether you want to <span className="text-emerald-500 font-extrabold hover:animate-pulse transition">volunteer</span>, <span className="text-fuchsia-600 font-extrabold hover:animate-pulse transition">collaborate</span>,
-    or have any <span className="text-indigo-600 font-extrabold hover:animate-pulse transition">questions</span>,
-    our team is eager to <span className="text-pink-500 font-extrabold hover:animate-pulse transition">connect</span> and <span className="text-emerald-500 font-extrabold hover:animate-pulse transition">support</span> you.
-  </span>
-  <motion.span
-    className="animate-pulse text-xl"
-    animate={{
-      rotate: [0, -10, 10, 0],
-      transition: { repeat: Infinity, duration: 3, ease: "easeInOut", delay: 1.5 }
-    }}
-  >✨</motion.span>
-</motion.p>
-
-          
+            <motion.span
+              className="animate-pulse text-xl"
+              animate={{
+                rotate: [0, 10, -10, 0],
+                transition: { repeat: Infinity, duration: 3, ease: "easeInOut" }
+              }}
+            >🤝</motion.span>
+              <span className="font-extrabold bg-gradient-to-r from-fuchsia-600 via-emerald-600 to-indigo-600 bg-clip-text text-transparent drop-shadow">
+                We’re here to help you.
+              </span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 via-indigo-600 to-emerald-500 font-bold drop-shadow-sm ml-1">
+                Whether you want to <span className="text-emerald-500 font-extrabold hover:animate-pulse transition">volunteer</span>, <span className="text-fuchsia-600 font-extrabold hover:animate-pulse transition">collaborate</span>,
+                or have any <span className="text-indigo-600 font-extrabold hover:animate-pulse transition">questions</span>,
+                our team is eager to <span className="text-pink-500 font-extrabold hover:animate-pulse transition">connect</span> and <span className="text-emerald-500 font-extrabold hover:animate-pulse transition">support</span> you.
+              </span>
+            <motion.span
+              className="animate-pulse text-xl"
+              animate={{
+                rotate: [0, -10, 10, 0],
+                transition: { repeat: Infinity, duration: 3, ease: "easeInOut", delay: 1.5 }
+              }}
+            >✨</motion.span>
+          </motion.p>
         </motion.div>
       </div>
     </section>

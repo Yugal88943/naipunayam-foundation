@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-// --- Bubble/Blurb Animation Keyframes ---
 const bubbleKeyframes = `
 @keyframes bubbleFloat1 { 0%{transform:translateY(0);} 35%{transform:translateY(-45px);} 70%{transform:translateY(0);} 100%{transform:translateY(0);} }
 @keyframes bubbleFloat2 { 0%{transform:translateY(0);} 50%{transform:translateY(-65px);} 100%{transform:translateY(0);} }
