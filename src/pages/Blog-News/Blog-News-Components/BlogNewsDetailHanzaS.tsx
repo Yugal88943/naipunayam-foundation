@@ -47,7 +47,12 @@ const BlogNewsDetailHanzaS: React.FC = () => {
             <FaHandsHelping className="inline-block text-indigo-600 mr-2" /> Empowerment doesn’t mean giving someone power—it means recognizing it was always there. HanzaS is designed to be a space where growth is part of the job.
           </p>
 
-          <h2 className="text-l font-bold text-indigo-700 hover:text-indigo-600 transition duration-300 ">3. Sustainability and Empowerment Go Hand in Hand</h2>
+          {/* <h2 className="text-l font-bold text-indigo-700 hover:text-indigo-600 transition duration-300 ">3. Sustainability and Empowerment Go Hand in Hand</h2> */}
+          <h2 className="text-base md:text-xl font-bold text-indigo-700 hover:text-indigo-600 transition duration-300">
+  3. Sustainability and Empowerment Go Hand in Hand
+</h2>
+
+          
           <p className="hover:bg-indigo-50/50 rounded p-2 transition duration-300">
             <FaLeaf className="inline-block text-indigo-600 mr-2" /> We’re committed to slow fashion—not just because it’s better for the planet, but because it gives our artisans the time and dignity they deserve. Every piece is stitched at a pace that respects both the hands making it and the Earth it comes from.
           </p>
