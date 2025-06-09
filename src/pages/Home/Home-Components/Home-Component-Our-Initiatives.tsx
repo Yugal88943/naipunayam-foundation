@@ -93,40 +93,40 @@ export default function HomeComponentOurInitiatives() {
 
               {/* Clickable Card as Link */}
               <Link
-                to={item.link}
-                onMouseEnter={() => setHovered(idx)}
-                onMouseLeave={() => setHovered(null)}
-                tabIndex={0}
-                className={`
-                  group bg-white/95 rounded-3xl shadow-xl
-                  px-6 py-8 flex flex-col items-center border border-indigo-100/70
-                  transition-all duration-300
-                  w-[92vw] max-w-[340px] sm:max-w-[400px] md:max-w-[360px]
-                  ${idx % 2 === 0 ? "ml-0 md:ml-12 lg:ml-20" : "mr-0 md:mr-12 lg:mr-20"}
-                  mt-2
-                  will-change-transform
-                  focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-fuchsia-300
-                  hover:scale-[1.045] hover:shadow-[0_4px_40px_0_rgba(232,121,249,0.16)]
-                `}
-              >
-                <div className="relative w-full flex justify-center mb-3">
-                  <img
-                    src={item.image}
-                    alt={item.alt}
-                    className="w-[min(92vw,240px)] h-[min(92vw,240px)] md:w-[200px] md:h-[200px] xl:w-[230px] xl:h-[230px] object-cover rounded-2xl shadow-lg border-2 border-fuchsia-100 group-hover:border-fuchsia-400 transition
-                      group-hover:shadow-[0_0_24px_0_rgba(232,121,249,0.20)] bg-white"
-                    loading="lazy"
-                    draggable={false}
-                  />
-                  <span className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-40 bg-gradient-to-br from-fuchsia-400 via-indigo-300 to-pink-200 pointer-events-none transition" />
-                </div>
-                <h3 className="text-lg md:text-2xl font-extrabold text-center mt-2 text-indigo-900 group-hover:text-fuchsia-700 transition">
-                  {item.title}
-                </h3>
-                <p className="text-base md:text-lg text-center mt-2 bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 via-indigo-500 to-emerald-500 font-semibold group-hover:from-fuchsia-700">
-                  {item.subtitle}
-                </p>
-              </Link>
+  to={item.link}
+  onMouseEnter={() => setHovered(idx)}
+  onMouseLeave={() => setHovered(null)}
+  tabIndex={0}
+  className={`
+    group bg-white/95 rounded-3xl shadow-xl
+    px-6 py-8 flex flex-col items-center border border-indigo-100/70
+    transition-all duration-300
+    w-[92vw] max-w-[340px] sm:max-w-[400px] md:max-w-[360px]
+    ${idx % 2 === 0 ? "ml-0 md:ml-12 lg:ml-20" : "mr-0 md:mr-12 lg:mr-20"}
+    mt-2 will-change-transform
+    focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-fuchsia-300
+    md:hover:scale-[1.045] md:hover:shadow-[0_4px_40px_0_rgba(232,121,249,0.16)]
+  `}
+>
+  <div className="relative w-full flex justify-center mb-3">
+    <img
+      src={item.image}
+      alt={item.alt}
+      className="w-[min(92vw,240px)] h-[min(92vw,240px)] md:w-[200px] md:h-[200px] xl:w-[230px] xl:h-[230px] object-cover rounded-2xl shadow-lg border-2 border-fuchsia-100
+        md:group-hover:border-fuchsia-400 md:group-hover:shadow-[0_0_24px_0_rgba(232,121,249,0.20)] bg-white"
+      loading="lazy"
+      draggable={false}
+    />
+    <span className="absolute inset-0 rounded-2xl opacity-0 md:group-hover:opacity-40 bg-gradient-to-br from-fuchsia-400 via-indigo-300 to-pink-200 pointer-events-none transition" />
+  </div>
+  <h3 className="text-lg md:text-2xl font-extrabold text-center mt-2 text-indigo-900 md:group-hover:text-fuchsia-700 transition">
+    {item.title}
+  </h3>
+  <p className="text-base md:text-lg text-center mt-2 bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-600 via-indigo-500 to-emerald-500 font-semibold md:group-hover:from-fuchsia-700">
+    {item.subtitle}
+  </p>
+</Link>
+
             </motion.div>
           ))}
         </div>

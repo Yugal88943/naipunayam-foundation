@@ -1,15 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF } from 'react-icons/fa';
 import logo from '../../assets/Logo-Naipunayam/logo.png';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
+
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  // Close on outside click
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (
+        isOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(e.target as Node)
+      ) {
+        closeMenu();
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -95,7 +111,6 @@ export default function Header() {
         <div className="hidden xl:flex items-center space-x-4">
           <a href="https://www.instagram.com/naipunayam/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-pink-600 text-lg transition-transform duration-200 hover:scale-110"><FaInstagram /></a>
           <a href="https://www.facebook.com/naipunayam" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-500 text-lg transition-transform duration-200 hover:scale-110"><FaFacebookF /></a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-400 text-lg transition-transform duration-200 hover:scale-110"><FaLinkedinIn /></a>
           <Link
             to="/contact-us"
             className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-md font-semibold text-sm transition-transform duration-200 hover:scale-110 shadow-lg"
@@ -106,7 +121,7 @@ export default function Header() {
         </div>
 
         {/* Mobile menu toggle */}
-        <div className="xl:hidden ml-auto">
+        <div className="xl:hidden ml-auto" ref={menuRef}>
           <button onClick={toggleMenu}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -117,6 +132,7 @@ export default function Header() {
       <AnimatePresence>
         {isOpen && (
           <motion.nav
+            ref={menuRef}
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -158,7 +174,6 @@ export default function Header() {
             <div className="flex justify-center space-x-6 mt-4">
               <a href="https://www.instagram.com/naipunayam/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-pink-600 text-lg"><FaInstagram /></a>
               <a href="https://www.facebook.com/naipunayam" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-500 text-lg"><FaFacebookF /></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-blue-400 text-lg"><FaLinkedinIn /></a>
             </div>
 
             <Link

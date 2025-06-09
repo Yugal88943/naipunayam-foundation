@@ -53,7 +53,7 @@ export default function Footer() {
           <div className="flex justify-center space-x-4 mb-4">
             <a href="https://www.instagram.com/naipunayam/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-gray-800 hover:text-pink-600 text-xl transition duration-300 transform hover:scale-110 hover:-translate-y-1"><FaInstagram /></a>
             <a href="https://www.facebook.com/naipunayam" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-gray-800 hover:text-blue-500 text-xl transition duration-300 transform hover:scale-110 hover:-translate-y-1"><FaFacebookF /></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-800 hover:text-blue-400 text-xl transition duration-300 transform hover:scale-110 hover:-translate-y-1"><FaLinkedinIn /></a>
+            {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-800 hover:text-blue-400 text-xl transition duration-300 transform hover:scale-110 hover:-translate-y-1"><FaLinkedinIn /></a> */}
           </div>
           <p className="text-sm text-gray-600">
             © {new Date().getFullYear()} Naipunayam Foundation. All rights reserved.

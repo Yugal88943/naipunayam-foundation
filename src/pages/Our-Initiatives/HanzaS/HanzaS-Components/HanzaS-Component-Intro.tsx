@@ -174,7 +174,7 @@ import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 
 const sections = [
   {
-    title: 'About HansaZ',
+    title: 'About HanzaS',
     desc: [
       `HanzaS began in 2011 in a small village in Rajasthan, when a mother and daughter, facing deep poverty and societal restrictions, turned to their heritage — handmade textiles and local crafts — for survival and dignity.`,
       `Defying norms that silenced women, they began trading handcrafted goods, eventually building a thriving business rooted in resilience and purpose.`,
@@ -257,7 +257,7 @@ const HanzaSComponentIntro: React.FC = () => {
           >
             {/* Title */}
             <motion.h2
-              className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-indigo-900 text-center hover:drop-shadow-[0_5px_20px_rgba(124,58,237,0.3)] transition-shadow duration-500"
+              className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-indigo-900 text-center hover:drop-shadow-[0_5px_20px_rgba(124,58,237,0.3)] transition-shadow duration-500"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
