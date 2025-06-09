@@ -51,14 +51,17 @@ const BlogNewsComponentIntro: React.FC = () => {
             className="text-lg md:text-xl text-gray-700 mb-4 text-justify"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.7, ease: "easeOut" }}
+            transition={{
+              delay: window.innerWidth < 768 ? 0.05 : 0.2, // faster on mobile
+              duration: 0.6,
+              ease: "easeOut"
+            }}
             viewport={{ once: true }}
           >
             Stay updated with the latest happenings, inspiring stories, and insightful articles from the Naipunayam Foundation. Explore how we're making a difference in education, empowerment, and community development.
           </motion.p>
         </motion.div>
-        
-        
+
         {/* Illustration */}
         <motion.div
           className="flex-1 flex justify-center items-center"
