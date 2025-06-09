@@ -39,7 +39,7 @@ const GeneralInquiryCard: React.FC = () => {
 </div>
       {/* Email */}
       <a
-        href="mailto:info@naipunayamfoundation.org"
+        href="mailto:info@naipunayam.org"
         className="
           text-lg md:text-xl font-extrabold text-blue-700 dark:text-blue-100 mb-2
           hover:text-cyan-700 transition-colors cursor-pointer flex items-center justify-center gap-2
@@ -48,7 +48,7 @@ const GeneralInquiryCard: React.FC = () => {
         style={{ wordBreak: 'break-word', textAlign: 'center' }}
       >
         <FaPaperPlane className="text-base" />
-        <span className="break-words">info@naipunayamfoundation.org</span>
+        <span className="break-words">info@naipunayam.org</span>
       </a>
     
       <p
