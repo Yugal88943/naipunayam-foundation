@@ -2,7 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 // src/App.tsx
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 // Header & Footer
 import Header from '@/components/Header-TSX/Header';
 import Footer from './components/Footer-TSX/Footer';
