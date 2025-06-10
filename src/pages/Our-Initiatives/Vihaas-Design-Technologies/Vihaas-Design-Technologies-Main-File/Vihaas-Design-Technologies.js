@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import VihaasDesignTechnologiesComponentBackground from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-Background";
+import VihaasDesignTechnologiesComponentIntro from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-Intro";
+import VihaasDesignTechnologiesComponentAbout from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-About";
+import VihaasDesignTechnologiesComponentProgramIntro from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-ProgramIntro";
+import VihaasWhoCanJoinSection from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-WhoCanJoin";
+import VisionComponent from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-Vision";
+import VihaasDesignTechnologiesComponentFAQ from "../Vihaas-Design-Technologies-Components/Vihaas-Design-Technologies-Component-FAQ";
+const VihaasDesignTechnologies = () => (_jsxs("div", { children: [_jsx(VihaasDesignTechnologiesComponentBackground, {}), _jsx(VihaasDesignTechnologiesComponentAbout, {}), _jsx(VisionComponent, {}), _jsx(VihaasDesignTechnologiesComponentIntro, {}), _jsx(VihaasDesignTechnologiesComponentProgramIntro, {}), _jsx(VihaasWhoCanJoinSection, {}), _jsx(VihaasDesignTechnologiesComponentFAQ, {})] }));
+export default VihaasDesignTechnologies;

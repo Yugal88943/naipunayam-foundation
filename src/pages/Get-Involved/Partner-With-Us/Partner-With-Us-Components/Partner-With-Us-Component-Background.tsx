@@ -9,6 +9,9 @@ const PartnerWithUsComponentBackgroundImage = () => (
       playsInline
       className="w-full aspect-[16/9] object-cover object-center"
       draggable={false}
+      controls={false}
+  disablePictureInPicture
+  controlsList="nodownload nofullscreen noremoteplayback"
     />
   </section>
 );

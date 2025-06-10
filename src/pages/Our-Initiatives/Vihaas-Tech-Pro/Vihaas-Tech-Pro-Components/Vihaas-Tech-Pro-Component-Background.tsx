@@ -10,7 +10,9 @@ const VihaasTechProComponentBackground: React.FC = () => (
       muted
       playsInline
       draggable={false}
-      
+      controls={false}
+  disablePictureInPicture
+  controlsList="nodownload nofullscreen noremoteplayback"
     />
   </section>
 );
