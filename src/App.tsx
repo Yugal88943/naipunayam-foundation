@@ -1,6 +1,7 @@
 // src/App.tsx
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Header & Footer
 import Header from '@/components/Header-TSX/Header';
@@ -54,7 +55,7 @@ function App() {
     <div className="relative"> {/* Prevents scroll offset errors */}
       <Header />
       <ScrollToTop />
-
+      <SpeedInsights />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<ContactUs />} />
