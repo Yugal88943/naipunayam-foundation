@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import hanzaSMission from "@/assets/Our-Initiatives-Section/hanzas_mission.png";
+import hanzaSMission from "@/assets/Our-Initiatives-Section/hanzas_mission.webp";
 
 const HanzaSComponentMission: React.FC = () => {
   return (

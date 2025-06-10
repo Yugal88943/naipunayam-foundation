@@ -1,11 +1,11 @@
 // src/pages/Blog-News/Blog-News-Components/blogData.ts
 
-import Blog_HanzaS_1 from "@/assets/Blog-News-Section/blog_hanzas_1.png";
-import Blog_HanzaS_2 from "@/assets/Blog-News-Section/blog_hanzas_2.png";
-import Vihaas_Design from "@/assets/Blog-News-Section/vihaas_design.jpg";
-import solderingImage from "@/assets/Blog-News-Section/solderingimage.jpg";
-import Blog_Vihaas_Tech_1 from "@/assets/Blog-News-Section/blog_vihaas_tech_1.jpg";
-import Blog_Vihaas_Tech_2 from "@/assets/Blog-News-Section/blog_vihaas_tech_2.jpg";
+import Blog_HanzaS_1 from "@/assets/Blog-News-Section/blog_hanzas_1.webp";
+import Blog_HanzaS_2 from "@/assets/Blog-News-Section/blog_hanzas_2.webp";
+import Vihaas_Design from "@/assets/Blog-News-Section/vihaas_design.webp";
+import solderingImage from "@/assets/Blog-News-Section/solderingimage.webp";
+import Blog_Vihaas_Tech_1 from "@/assets/Blog-News-Section/blog_vihaas_tech_1.webp";
+import Blog_Vihaas_Tech_2 from "@/assets/Blog-News-Section/blog_vihaas_tech_2.webp";
 export const blogPosts = [
   {
     id: 1,

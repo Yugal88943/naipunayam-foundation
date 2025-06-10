@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Cpu, Users, Settings, Star } from "lucide-react";
-import vihaasDesignIntro from "@/assets/Our-Initiatives-Section/vihaas-design-intro.jpeg";
+import vihaasDesignIntro from "@/assets/Our-Initiatives-Section/vihaas-design-intro.webp";
 
 const VihaasDesignTechnologiesComponentAbout: React.FC = () => {
   const features = [

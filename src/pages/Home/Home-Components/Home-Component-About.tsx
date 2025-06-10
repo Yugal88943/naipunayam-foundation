@@ -3,9 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import { FaBook, FaHeart, FaUsers } from 'react-icons/fa';
-import image1 from '@/assets/Home-Section/home-section-about-1.jpg';
-import image2 from '@/assets/Home-Section/home-section-about-2.png';
-import image3 from '@/assets/Home-Section/home-section-about-3.png';
+import image1 from '@/assets/Home-Section/home-section-about-1.webp';
+import image2 from '@/assets/Home-Section/home-section-about-2.webp';
+import image3 from '@/assets/Home-Section/home-section-about-3.webp';
 import { isAppleDevice } from './isAppleDevice';
 
 type ContentBlock = {

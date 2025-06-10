@@ -1,6 +1,6 @@
-import aboutUs2 from "@/assets/About-Section/about-2.jpg";
-import vihaasTech2 from "@/assets/About-Section/vihaas-tech-2.jpg";
-import vihaasTech9 from "@/assets/About-Section/vihaas-tech-9.jpeg";
+import aboutUs2 from "@/assets/About-Section/about-2.webp";
+import vihaasTech2 from "@/assets/About-Section/vihaas-tech-2.webp";
+import vihaasTech9 from "@/assets/About-Section/vihaas-tech-9.webp";
 import { motion, useInView, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 

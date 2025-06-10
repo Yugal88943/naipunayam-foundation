@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaCogs, FaUserGraduate, FaBolt } from "react-icons/fa";
-import vihaasTechImage from "@/assets/Our-Initiatives-Section/vihaas-tech-13.jpg";
+import vihaasTechImage from "@/assets/Our-Initiatives-Section/vihaas-tech-13.webp";
 
 const fadeIn = {
   initial: { opacity: 0, y: 20 },

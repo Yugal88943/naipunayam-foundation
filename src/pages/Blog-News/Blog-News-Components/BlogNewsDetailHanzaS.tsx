@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import blogImage from "@/assets/Blog-News-Section/blog_hanzas_6.png";
+import blogImage from "@/assets/Blog-News-Section/blog_hanzas_6.webp";
 import { FaHandsHelping, FaUserFriends, FaLeaf, FaGlobe } from "react-icons/fa";
 
 const BlogNewsDetailHanzaS: React.FC = () => {

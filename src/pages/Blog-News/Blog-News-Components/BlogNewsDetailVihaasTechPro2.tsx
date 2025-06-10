@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaMicrochip, FaProjectDiagram, FaCogs } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import Blog_Vihaas_Tech_2 from "@/assets/Blog-News-Section/blog_vihaas_tech_4.jpg";
+import Blog_Vihaas_Tech_2 from "@/assets/Blog-News-Section/blog_vihaas_tech_4.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

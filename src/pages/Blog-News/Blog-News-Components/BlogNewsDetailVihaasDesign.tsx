@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Blog_Vihaas_Design_3 from "@/assets/Blog-News-Section/vihaas-1.jpeg";
-import Blog_Vihaas_Design_2 from "@/assets/Blog-News-Section/soldering-2.jpeg";
-import Blog_Vihaas_Design_5 from "@/assets/Blog-News-Section/vihaas-2.jpeg";
+import Blog_Vihaas_Design_3 from "@/assets/Blog-News-Section/vihaas-1.webp";
+import Blog_Vihaas_Design_2 from "@/assets/Blog-News-Section/soldering-2.webp";
+import Blog_Vihaas_Design_5 from "@/assets/Blog-News-Section/vihaas-2.webp";
 import { useNavigate } from "react-router-dom";
 import { FaBolt, FaTools, FaSeedling } from "react-icons/fa";
 

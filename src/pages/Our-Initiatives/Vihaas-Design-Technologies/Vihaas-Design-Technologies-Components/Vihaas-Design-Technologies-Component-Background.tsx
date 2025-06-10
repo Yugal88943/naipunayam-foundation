@@ -1,5 +1,5 @@
 import React from "react";
-import vihaasDesignVideo from "@/assets/Our-Initiatives-Section/vihaas_design_video.mp4"; 
+import vihaasDesignVideo from "@/assets/Our-Initiatives-Section/vihaas_design_video.webm"; 
 
 const VihaasDesignTechnologiesComponentBackground: React.FC = () => (
   <section className="w-full mt-[1px]">

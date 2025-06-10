@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import blog_Vihaas_Tech_3 from "@/assets/Blog-News-Section/data_image.jpg";
+import blog_Vihaas_Tech_3 from "@/assets/Blog-News-Section/data_image.webp";
 
 const fadeLeft = {
   hidden: { opacity: 0, x: -48 },

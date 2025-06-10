@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { FaTools, FaCheckCircle } from "react-icons/fa";
-import Blog_Vihaas_Design_3 from "@/assets/Blog-News-Section/soldering-3.jpeg";
-import Blog_Vihaas_Design_4 from "@/assets/Blog-News-Section/soldering-1.jpeg";
+import Blog_Vihaas_Design_3 from "@/assets/Blog-News-Section/soldering-3.webp";
+import Blog_Vihaas_Design_4 from "@/assets/Blog-News-Section/soldering-1.webp";
 
 const transitionCommon = { duration: 0.6, ease: "easeOut" };
 

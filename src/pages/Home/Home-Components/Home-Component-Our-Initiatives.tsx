@@ -3,9 +3,9 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-import vihaasDesign from "@/assets/Home-Section/home-section-ourinitiatives-vihaasdesigntechnologies.jpg";
-import vihaasTech from "@/assets/Home-Section/home-section-ourinitiatives-vihaastechpro.jpg";
-import hansaz from "@/assets/Home-Section/home-section-ourinitiatives-hanzas.jpg";
+import vihaasDesign from "@/assets/Home-Section/home-section-ourinitiatives-vihaasdesigntechnologies.webp";
+import vihaasTech from "@/assets/Home-Section/home-section-ourinitiatives-vihaastechpro.webp";
+import hansaz from "@/assets/Home-Section/home-section-ourinitiatives-hanzas.webp";
 
 const INITIATIVES = [
   {

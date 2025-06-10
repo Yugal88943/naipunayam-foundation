@@ -1,4 +1,4 @@
-  import aboutUsVideo from '@/assets/About-Section/about_naipunayam_foundation_background.mp4';
+  import aboutUsVideo from '@/assets/About-Section/about_naipunayam_foundation_background.webm';
 
   const AboutComponentBackgroundImages = () => (
       <section className="w-full mt-[1px]">

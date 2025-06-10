@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaHandsHelping, FaUserFriends, FaHeartbeat, FaIndustry } from "react-icons/fa";
-import blogImage from "@/assets/Blog-News-Section/blog_hanzas_5.jpg";
+import blogImage from "@/assets/Blog-News-Section/blog_hanzas_5.webp";
 
 const BlogNewsDetailHanzaS2: React.FC = () => {
   const navigate = useNavigate();

@@ -1,6 +1,6 @@
 // HanzaS-Component-Background.tsx
 import React from "react";
-import hanzaSVideo from '@/assets/Our-Initiatives-Section/hanzas_video.mp4';
+import hanzaSVideo from '@/assets/Our-Initiatives-Section/hanzas_video.webm';
 
 const HanzaSComponentBackground: React.FC = () => (
   <section className="w-full mt-[1px]">
