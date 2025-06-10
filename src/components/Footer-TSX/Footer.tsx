@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaInstagram, FaFacebookF} from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import logo from '../../assets/Logo-Naipunayam/logo.png';
+import logo from '../../assets/Logo-Naipunayam/logo.webp';
 
 export default function Footer() {
   return (

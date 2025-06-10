@@ -3,7 +3,7 @@ import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import { TechAnimation, FashionAnimation, StudyAnimation } from './Animations/Tech-Fashion-Study-Animations';
 import { Link } from 'react-router-dom';
-import logo from "@/assets/Logo-Naipunayam/logo.png";
+import logo from "@/assets/Logo-Naipunayam/logo.webp";
 export default function HomeComponentIntro() {
   const [activeSection, setActiveSection] = useState<number>(0);
   const [showSubtitle, setShowSubtitle] = useState<boolean>(false);

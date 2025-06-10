@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaInstagram, FaFacebookF } from 'react-icons/fa';
-import logo from '../../assets/Logo-Naipunayam/logo.png';
+import logo from '../../assets/Logo-Naipunayam/logo.webp';
 import { Link } from 'react-router-dom';
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
